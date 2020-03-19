@@ -1,5 +1,8 @@
 .app {
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .headings {
@@ -8,14 +11,58 @@
 
 .brush-selection {
   height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .paint {
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pad {
+  margin: 4px;
+}
+
+.group {
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fileGroup {
+  width: 175px;
+}
+
+.colorInput {
+  width: 60px;
+  margin: 5px;
+}
+
+.inputFile {
+  width: 150px;
+}
+
+.customColor {
+  height: 24px;
+  margin: 0 5px 0 5px;
+}
+
+.color-custom {
+  background-color: white;
 }
 
 .palette {
   display: flex;
+  align-items: stretch;
+}
+
+.button {
+  height: 32px;
 }
 
 .brush {
@@ -33,30 +80,51 @@
   border: 1px solid black;
 }
 
+/*
 .canvas {
+  margin-top: 20px;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(50, 10px);
+  grid-template-rows: repeat(50, 10px);
+}
+*/
 
+.canvas {
+  margin-top: 20px;
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(100, 5px);
+  grid-template-rows: repeat(100, 5px);
 }
 
 .square {
-  transition: 0.5s;
+  /*transition: 0.5s;*/
+  width: 5px;
+  height: 5px;
+  border: 0;
 }
 
 .color-1 {
-
+  background-color: #add8e6;
 }
 
 .color-2 {
-
+  background-color: #ffa500;
 }
 
 .color-3 {
-
+  background-color: #90ee90;
 }
 
 .color-4 {
-
+  background-color: #ffff00;
 }
 
 .color-5 {
-
+  background-color: white;
 }
